@@ -1,16 +1,16 @@
 //    Router é um recurso do Express que permite criar um arquivo de Rotas para exportar dados para a aplicação.
-const { Router } = require("express");
-const UserController = require("./controller");
-const router = new Router();
+const { Router } = require("express")
+const UserController = require("./controller")
+const router = new Router()
 
-router.get("/", UserController.getAll);
+router.get("/", UserController.getAll)
 
-router.get("/:id", UserController.getById);
+router.get("/:id", UserController.getById)
 
-router.post("/", UserController.add);
+router.post("/", UserController.add)
 
-/*router.put("/:id", UserController.edit);
+router.put("/:id", UserController.edit)
 
-router.delete("/:id", UserController.deleteUser); */
+router.delete("/:id", UserController.remove)
 
-module.exports = router;
+module.exports = router
